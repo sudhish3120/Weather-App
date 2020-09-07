@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather Forecast</title>
+</head>
+
+
+<!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles2.css">
+
+<body>
+
+  <div class="outer-wrapper container">
+    <div class="col-lg-1 col-md-1 col-sm-0">
+
+    </div>
+
+    <div class="inner-wrapper col-lg-10 col-md-10 col-sm-12">
+
+<h1 class="heading">WEATHER FORECAST</h1>
+
+<div class="card" style="width: 18rem;">
+
+  <% if (description==="clear sky") { %>
+    <img src="https://cdn.wallpaperhub.app/cloudcache/f/b/b/d/a/d/fbbdada7ce61a2181a4de8da8b40f2f106ffbf6b.jpg" class="card-img-top">
+  <%} else if(description==="few clouds"){%>
+    <img src="https://media.istockphoto.com/photos/clear-blue-sky-with-few-clouds-picture-id828274932?k=6&m=828274932&s=170667a&w=0&h=V4JIgknr4FRUAoCXp5OH3srgeELWdgAbrz4Pd_UmmFM=" class="card-img-top">
+  <%} else if(description==="scattered clouds" || description==="broken clouds"){%>
+    <img src="https://images.squarespace-cdn.com/content/v1/5d4c63022fdc0f0001a31f58/1565863502860-U636YZGVWKQJ47331LG6/ke17ZwdGBToddI8pDm48kAob4oFDCylE9noX3TKqBxtZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyN51cvbdTmAkAomzhe6rlfk_96am3hwUz8aF9U6bzFRhN3LU7jr2sWsDb_b6WXWZ0/cloud+dark+blue.jpg?format=2500w" class="card-img-top">
+  <%} else if(description==="light rain" || description==="shower rain"){%>
+    <img src="https://live.staticflickr.com/6191/6113430622_370016e5a9_b.jpg" class="card-img-top">
+  <%} else if(description==="rain" || description==="moderate rain"){%>
+    <img src="https://static.temblor.net/wp-content/uploads/2017/03/rain.jpg" class="card-img-top">
+  <%} else if(description==="thunderstorm"){%>
+    <img src="https://www.vmcdn.ca/f/files/halifaxtoday/images/weather/072919-thunderstorm-adobestock_224367109.jpeg;w=960" class="card-img-top">
+  <%} else if(description==="snow"){%>
+    <img src="https://images.dailyhive.com/20190225084228/vsnapshot_51749387_347811682734048_7581411552550605324_n.jpg" class="card-img-top">
+  <%} else if(description==="mist"){%>
+    <img src="https://downloadwallpapers-net.s3.amazonaws.com/1440x900/misty-weather.jpg" class="card-img-top">
+  <%} else if(description==="haze"){%>
+    <img src="https://theinsiderstories.com/wp-content/uploads/2019/09/haze.jpg" class="card-img-top">
+  <%} else if(description==="overcast clouds"){%>
+    <img src="https://wallpaperstock.net/wallpapers/thumbs1/14039wide.jpg" class="card-img-top">
+    <%}%>
+
+
+  <div class="card-body">
+    <h5 class="card-title"><%=cityName%></h5>
+    <p class="card-text"> It is <%=temp%>&#176;C right now. Feels like <%=feelsLike%>&#176;C. Description: <%=description%></p>
+  </div>
+</div>
+
+<form action="/" method="post">
+  <button class="btn btn-primary" type="submit" name="button" value="Redirect-2">Try a different city</button>
+</form>
+
+
+<footer>&copy; Sudhish Meenakshisundaram 2020</footer>
+</div>
+
+<div class="col-lg-1 col-md-1 col-sm-0">
+
+</div>
+
+
+</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="jsfiles/effects.js" charset="utf-8"></script>
+</html>

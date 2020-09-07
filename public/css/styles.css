@@ -1,0 +1,64 @@
+
+body {
+  background: linear-gradient(to bottom right, #f6f7d4, #99f3bd) no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 400;
+}
+
+.outer-wrapper{
+  padding: 10rem 2rem 10rem 2rem;
+  color: #28df99;
+}
+.inner-wrapper{
+  text-align: center;
+  margin: auto;
+}
+.prompt {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 400;
+}
+
+.heading{
+  font-size: 5rem;
+  font-family: 'Gayathri', sans-serif;
+  font-weight: 700;
+}
+
+input {
+  display: block;
+  padding: 3px 10px 3px 10px;
+  text-align: center;
+  border-color: #28df99;
+  border-radius: 15px !important;
+  outline: none;
+}
+
+
+.btn{
+  margin: 10px 0 0 0;
+  background-color: #28df99 !important;
+  border-color: #28df99 !important;
+  border-radius: 15px !important;
+}
+.btn:hover{
+  background-color: #35d497 !important;
+  border-color: #35d497 !important;
+}
+
+.form-wrapper{
+  display: block;
+  margin-top: 4rem;
+}
+
+form {
+  display: inline-block;
+}
+
+footer {
+  margin-top: 50px;
+}
